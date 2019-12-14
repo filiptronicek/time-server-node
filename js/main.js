@@ -7,8 +7,9 @@ function updateTime() {
         document.getElementById("time").innerHTML = http.responseText;
     };
 }
+const now = Date.now(); // Unix timestamp in milliseconds
 
-document.getElementById("time").innerHTML = new Date().now;
+document.getElementById("time").innerHTML = now;
 
 setInterval(function() {
     updateTime();
