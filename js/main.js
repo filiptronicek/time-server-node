@@ -8,7 +8,7 @@ function updateTime() {
     };
 }
 
-document.getElementById("time").innerHTML = Date().now;
+document.getElementById("time").innerHTML = new Date().now;
 
 setInterval(function() {
     updateTime();
