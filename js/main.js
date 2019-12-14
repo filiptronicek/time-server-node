@@ -19,3 +19,4 @@ function updateTime() {
 setInterval(function() {
     updateTime();
   }, 1000);
+updateTime();
