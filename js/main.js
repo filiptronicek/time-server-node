@@ -8,7 +8,8 @@ function updateTime() {
         let epoch = new Date().getTime(); // Unix timestamp in milliseconds
         epoch = (epoch / 1000).toFixed(0);
         document.getElementById("comp_time").innerHTML = epoch;
-        console.log("Difference (ms): " + Number(http.responseText) - epoch);
+        console.log("Server time: " + (http.responseText) );
+        console.log("Local time: " + epoch )
     };
 
 }
