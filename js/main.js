@@ -7,7 +7,7 @@ function updateTime() {
         document.getElementById("time").innerHTML = (http.responseText - (http.responseText % 1000)) / 1000;
     };
 }
-const now = Date.now() / 1000; // Unix timestamp in milliseconds
+const now = Date.now - (Date.now() % 1000) / 1000; // Unix timestamp in milliseconds
 
 document.getElementById("time").innerHTML = now;
 
