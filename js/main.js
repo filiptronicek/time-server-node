@@ -1,7 +1,7 @@
 function updateTime() {
     const http = new XMLHttpRequest();
 
-    http.open("GET", "./api/time");
+    http.open("GET", "./api/");
     http.send();
     http.onload = () => {
         document.getElementById("time").innerHTML = (http.responseText - (http.responseText % 1000)) / 1000;
