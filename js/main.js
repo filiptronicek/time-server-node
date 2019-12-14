@@ -6,9 +6,9 @@ function updateTime() {
     http.onload = () => {
         document.getElementById("time").innerHTML = (http.responseText - (http.responseText % 1000)) / 1000;
     };
-    const now = Date.now; // Unix timestamp in milliseconds
+    const epoch = Date.now; // Unix timestamp in milliseconds
 
-    document.getElementById("comp_time").innerHTML = now;
+    document.getElementById("comp_time").innerHTML = epoch;
 }
 
 
