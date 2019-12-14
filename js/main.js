@@ -4,7 +4,7 @@ function updateTime() {
     http.open("GET", "./api/time");
     http.send();
     http.onload = () => {
-        document.getElementById("time").innerHTML = (http.responseText - (http.responseText % 100)) / 1000;
+        document.getElementById("time").innerHTML = (http.responseText - (http.responseText % 1000)) / 1000;
     };
 }
 const now = Date.now() / 1000; // Unix timestamp in milliseconds
