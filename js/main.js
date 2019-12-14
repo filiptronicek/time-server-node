@@ -5,8 +5,8 @@ function updateTime() {
     http.send();
     http.onload = () => {
         document.getElementById("time").innerHTML = (http.responseText - (http.responseText % 1000)) / 1000;
-        const epoch = new Date().getTime(); // Unix timestamp in milliseconds
-
+        let epoch = new Date().getTime(); // Unix timestamp in milliseconds
+        epoch = epoch.toFixed(0);
         document.getElementById("comp_time").innerHTML = epoch;
     };
 
