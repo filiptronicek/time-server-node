@@ -1,2 +1,3 @@
-# time-server
- A easy peasy Node.js based time server
+# Time server
+ An easy peasy Node.js based time server
+
