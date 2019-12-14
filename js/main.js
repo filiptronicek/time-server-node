@@ -12,4 +12,4 @@ document.getElementById("time").innerHTML = Date().now;
 
 setInterval(function() {
     updateTime();
-  }, 500);
+  }, 800);
