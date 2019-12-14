@@ -10,7 +10,7 @@ function updateTime() {
         document.getElementById("comp_time").innerHTML = epoch;
         console.log("Server time: " + (http.responseText) );
         console.log("Local time: " + epoch );
-        console.log("Diff: " + http.responseText - epoch);
+        //console.log("Diff: " + http.responseText - epoch);
     };
 
 }
